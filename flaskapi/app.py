@@ -14,6 +14,11 @@ def health():
     return jsonify({
         "status": "UP"
     })
+@app.route("/harish")
+def harish():
+    return jsonify({
+        "status": "Harish is working fine"
+    })
 
 @app.route("/hello/<name>")
 def hello(name):
